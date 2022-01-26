@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+  font-family: 'Open Sans';
+  font-weight: 600;
+  overflow-x: hidden;
+  width: 100%;
+}
+    
+/*Header Styling
+________________*/
+header{
+    background-image: linear-gradient(to right,white,white,white,rgb(18,18,78),rgb(18, 18, 78),rgb(18, 18, 78),rgb(18, 18, 78));
+    height: 95px;
+   
+}
+
+/*logo
+______*/
+
+.logo1{
+    margin-left: 50px;
+    height:70px ;
+    position: absolute;
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .logo1 {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: .85;
+}
+/* Style the navigation bar links 
+_________________________________*/
+
+.navbar{
+    margin-top: 20px;
+    z-index: 3;
+}
+.navbar-toggler-icon{
+    background-image: url(Images/1024px-Hamburger_icon_white.svg.png);
+}
+.navbar-toggler{
+    margin-right: -50px;
+    margin-bottom: 35px;
+    border-color: white;
+}
+
+.navbar a {
+margin-left: 1px;
+font-family: 'Roboto Condensed', sans-serif;
+text-decoration: none;
+text-align: center;
+transition: .3s ease-in-out;
+margin-top: -10px;
+color: white;
+background-color: rgb(18, 18, 78);
+
+}
+/* Change color on hover 
+________________________*/
+.navbar a:hover {
+color: white;
+/*background-color: #f7931d;*/
+/*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+/*box-shadow: 0 12px 16px 0 white;*/
+background-color: #f7931d;
+}
+
+/* Login Button and Form 
+_________________________*/
+
+ /*Icon*/
+ .icon {
+  border: none;
+}
+
+
+.forM{
+    height: 95px;
+}
+
+/* The form (background)
+________________________ */
+.form {
+  display: none; 
+  position: fixed;
+  z-index: 1000000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+  font-family: 'Open Sans';
+}
+
+/* form Content/Box 
+____________________*/
+.form-content {
+  background-color: white;
+  margin: 5% auto 15% auto; 
+  border: 1px solid lightgrey;
+  width: 80%; 
+}
+
+
+/* Email and password boxes 
+___________________________*/
+input[type=email], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: block;
+border: 1px solid black;
+box-sizing: border-box;
+}
+
+.close:hover{
+color: auto;
+cursor: pointer;
+}
+
+
+
+.login {
+background-color: #f7931d;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+transition: .4s;
+}
+    
+.login:hover {
+opacity: .85;
+color: white;
+}
+
+.new-account{
+color: black;
+text-decoration: none;
+width: auto;
+padding: 10px 18px;
+background-color: white;
+border-color: 2px black;
+color: black;
+margin-left: 15px;
+margin-bottom: 15px;
+transition: .4s;
+}
+
+.new-account:hover{
+background-color: black;
+border-color: 2px white;
+color: white;
+}
+
+
+  .cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: rgb(18, 18, 78);
+color: white;
+margin-left: 15px;
+margin-bottom: 15px;
+transition: .4s;
+}
+
+.cancelbtn:hover{
+  opacity: .9;
+}
+
+.container {
+padding: 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*Animation For Login Form Pop-up
+_________________________________*/
+
+.animate {
+  -webkit-animation: zoomanimation .6s;
+  animation: zoomanimation .6s;
+}
+
+@-webkit-keyframes zoomanimation {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes zoomanimation {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/*New Account Form
+___________________*/
+
+.CA{
+  color: #04133E;
+  border-bottom:solid  #04133E;
+}
+
+
+/*Footer
+________*/
+
+
+footer{
+  background:#04133E;
+  padding: -25px -25px;
+  }
+  
+  .number{ 
+  color:white;
+  }
+  
+  .number:hover{
+  color:#f7931d;
+  }
+  
+  
+  .row p{
+    margin: 2px;
+  }
+  
+  .Cright{
+    color: #f7931d;
+  }
+
+  .CA-btn{
+    color: black;
+    border-color: #04133E;
+    transition: .2s ease-in-out;
+  }
+
+  .CA-btn:hover{
+    color: #f7931d;
+    background-color: #04133E;
+    border-color: #f7931d;
+  } 
+  
